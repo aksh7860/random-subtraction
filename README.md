@@ -8,13 +8,13 @@ Follow the Steps to Set Up Web Scrapping Tool.
 
 ### How do I get set up? ###
 
-* Install node and express
-* Dependencies
-* Database configuration
-* Deployment instructions
+* git clone https://aksh7860@bitbucket.org/aksh7860/medium-scrap.git
+* cd medium-scrap
+* npm install
+* Install mysql and execute the scrapWebsite.sql
+* Open Browser and access the url http://localhost:3000/api/scrapData
 
 
 ### Who do I talk to? ###
 
-* Repo owner or admin
-* Other community or team contact
+* Abhishek Kumar (abhi.kumar793@gmail.com)

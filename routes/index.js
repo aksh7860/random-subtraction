@@ -2,8 +2,8 @@
 //const Logger = require('../lib/logger');
 const express = require('express');
 const router = express.Router();
-const ScrapController = require('../controllers/scrap');
+const SubtractionController = require('../controllers/subtract');
 
-router.get('/api/scrapData',ScrapController.scrap);
+router.post('/api/subractNumbers', SubtractionController.subtractNumbers);
 
 module.exports = router;

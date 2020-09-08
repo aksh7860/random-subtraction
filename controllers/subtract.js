@@ -120,9 +120,9 @@ class SubtractionController {
       }
       resolve(responseObj);
     }).then((responseObj) => {
-        res.status(responseObj.status).send(Response.response(responseObj.status,responseObj.message,responseObj.success,responseObj.result));
+        res.status(responseObj.status).send(Response.response(responseObj.status,responseObj.result,responseObj.success,responseObj.message));
     }).catch((err) => {
-      res.status(503).send(Response.response(503, 'null', false, ''));
+      res.status(503).send(Response.response(503, '', false, 'Failed'));
     })
   }
 

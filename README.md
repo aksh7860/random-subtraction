@@ -13,6 +13,7 @@ Follow the Steps to Set Up Access Subtraction API.
 * npm install && npm start
 * Open PostMan and make a post request with url http://localhost:3000/api/subtractNumbers
 * Post Params: Select content-type to json with selecting body as raw, Example Json 
+    ```json
     {
         "data" : {
             "questionCount" : 2,
@@ -21,7 +22,24 @@ Follow the Steps to Set Up Access Subtraction API.
             "subtrahend": 3
         }
     } 
+    ```
 * For Testing npm test
+
+### Docker Setup ###
+
+* sudo docker run -p 49160:3000 -d aksh7860/random-subtract
+* Open PostMan and make a post request with url http://localhost:49160/api/subtractNumbers
+* Post Params: Select content-type to json with selecting body as raw, Example Json 
+    ```json
+    {
+        "data" : {
+            "questionCount" : 2,
+            "hasBorrowing": false,
+            "minuend": 4,
+            "subtrahend": 3
+        }
+    } 
+    ```
 
 ### Logic for Storing The Questions
 * I would have questions table which would be having columns such as minuend,subtrahend ,digits, ID. Now i would have another table options which would have 4 columns such as answerA,answerB,answerC,answerD,questionID , each options row would be mapped to question tables by foreign key questionID
